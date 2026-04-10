@@ -1,7 +1,5 @@
 package com.hotel.reservas.dto;
 
-import com.hotel.reservas.model.ServiceType;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;

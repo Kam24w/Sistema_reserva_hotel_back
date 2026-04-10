@@ -4,7 +4,6 @@ import com.hotel.reservas.model.Room;
 import com.hotel.reservas.model.RoomType;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
 

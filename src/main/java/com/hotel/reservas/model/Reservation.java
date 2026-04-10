@@ -5,15 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Reservation {
-    private String id;
-    private String guestName;
-    private String guestEmail;
-    private String guestPhone;
-    private Room room;
-    private LocalDate checkInDate;
-    private LocalDate checkOutDate;
+    private final String id;
+    private final String guestName;
+    private final String guestEmail;
+    private final String guestPhone;
+    private final Room room;
+    private final LocalDate checkInDate;
+    private final LocalDate checkOutDate;
     private ReservationStatus status;
-    private List<ServiceType> additionalServices;
+    private final List<ServiceType> additionalServices;
     private String digitalKey;
     private double baseTotal;
     private double servicesTotal;

@@ -1,17 +1,26 @@
 package com.hotel.reservas.controller;
 
-import com.hotel.reservas.dto.*;
-import com.hotel.reservas.facade.ReservationFacade;
-import com.hotel.reservas.model.ServiceType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.hotel.reservas.dto.ReservationRequestDTO;
+import com.hotel.reservas.dto.ReservationResponseDTO;
+import com.hotel.reservas.dto.RoomDTO;
+import com.hotel.reservas.dto.ServiceRequestDTO;
+import com.hotel.reservas.facade.ReservationFacade;
+import com.hotel.reservas.model.ServiceType;
+
 @RestController
 @RequestMapping("/api/reservations")
-@CrossOrigin(origins = "*")
 public class ReservationController {
 
     private final ReservationFacade reservationFacade;

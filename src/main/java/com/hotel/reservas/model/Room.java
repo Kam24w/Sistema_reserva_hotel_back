@@ -1,11 +1,11 @@
 package com.hotel.reservas.model;
 
 public class Room {
-    private String number;
-    private RoomType type;
-    private double basePrice;
+    private final String number;
+    private final RoomType type;
+    private final double basePrice;
     private boolean available;
-    private String description;
+    private final String description;
 
     public Room(String number, RoomType type, double basePrice, String description) {
         this.number = number;
